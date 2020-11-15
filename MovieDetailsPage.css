@@ -1,0 +1,186 @@
+.header{
+    display: grid;
+    background: #2b2b2b;
+    width: 110%;
+    height: 90px;
+    color: white;
+    position: relative;
+    margin-left: -10px;
+    margin-top: -10px;
+    padding-left: 20px;
+    padding-top: 30px;   
+}
+
+#movieTitle{
+    display: block;
+    background: #6b6b6b;
+    width: 100%;
+    height: auto;
+    color: white;
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* All Videos Button*/
+
+#ID_AllVideosBTN{
+    border:none;
+    outline:none;
+    border-radius: 5px;
+    position: relative; 
+    margin-left: -1083px; 
+    margin-right: 10px;
+    display: inline-block;
+    left: 0%;
+    padding: 10px;
+    background: #35ad32;
+    color: white;
+    font-weight: 500;
+    transition: 0.2s;
+    
+}
+
+#ID_AllVideosBTN:hover{
+    background: #2c9429;
+    transition: 0.2s;
+}
+#ID_AllVideosBTN:active{
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+
+/* Cast Button*/
+
+#ID_CastButton{
+    border:none;
+    outline:none;
+    border-radius: 5px;
+    position: relative; 
+    left: 0%; 
+    display: inline-block;
+    padding: 10px;
+    background: #f2be00;
+    color: black;
+    font-weight: 500;
+    transition: 0.2s;
+    margin-right: 10px;
+}
+
+#ID_CastButton:hover{
+    background: #b39837;
+    transition: 0.2s;
+}
+
+#ID_CastButton:active{
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+
+/* All Reviews Button*/
+
+#ID_ReviewButton{
+    border:none;
+    outline:none;
+    border-radius: 5px;
+    position: relative; 
+    left: 0%; 
+    display: inline-block;
+    padding: 10px;
+    background: #1c87d9;
+    color: white;
+    font-weight: 500;
+    transition: 0.2s;
+    margin-right: 10px;
+}
+
+#ID_ReviewButton:hover{
+    background: #176fb3;
+    transition: 0.2s;
+}
+
+#ID_ReviewButton:active{
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+
+.behindScenesInfo{
+    color: white;
+    position: absolute;
+    left: 58%;
+    margin-top: -20px;
+}
+
+
+#CastList{
+    position: relative;
+    margin-top: 20px;
+    margin-left: -5px;
+    display: block;
+}
+
+.CastListItem{
+    position: relative;
+    border-radius: 5px;
+    background: #636363;
+    color: lightgray;
+    width: 1100px;
+    height: 60px;
+    margin-bottom: 10px;
+
+}
+
+@keyframes fadeIn {
+    from {opacity: 0 }
+    to {opacity: 1;}
+  }
+
+#pageTransparency{
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.SimilarMoviesGallery{
+    position: relative;
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 500px;
+    float: left;
+
+}
+.similarMoviesItem{
+    width: 75px; 
+    height: 110px; 
+    margin: 10px; 
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px 2px #888888;
+    cursor: pointer;
+
+    
+}
+
+
+.SimilarMovieInfo{
+    position: relative;
+    margin-left: -1000px;
+    margin-top: 40px;
+    width: 500px;
+    float: right;
+}
+
+.reviewItem{
+    position: relative;
+    border-radius: 5px;
+    background: #636363;
+    color: lightgray;
+    width: 1100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+

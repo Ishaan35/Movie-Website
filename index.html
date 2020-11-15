@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="mainPage.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <link rel="icon" href="images/icon.png">
+
+</head>
+
+<body class="body">
+    <script type="text/javascript" src="Configuration.js"></script>
+    <script type="text/javascript" src="Results.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+
+    <div class="header">
+        <p style="font-size: x-large; font-weight: 600; display: inline; ">Movie Website</p>
+        <input type="text" placeholder="Search.." id="searchBar">
+        <button id="searchButton" onclick="search()"><img src="images/search.png" alt="" width="20px"></button>
+    </div>
+
+
+
+
+
+    <!--Sliders-->
+    <div id="Container">
+        <h3 class="popularMoviesTitle">Popular:</h3>
+        <div id="Carousel">
+        </div>
+
+        <h3 class="TopRatedMoviesTitle">Top Rated:</h3>
+        <div id="Carousel2">
+        </div>
+
+
+        <h3 class="TopRatedMoviesTitle">Now Playing:</h3>
+        <div id="Carousel3">
+        </div>
+
+        <h3 class="TopRatedMoviesTitle">Upcoming:</h3>
+        <div id="Carousel4">
+        </div>
+
+
+
+        <style>
+            .popularMoviesTitle {
+                color: whitesmoke;
+                margin-bottom: 20px;
+                margin-left: 10px;
+            }
+
+            .TopRatedMoviesTitle {
+                color: whitesmoke;
+                margin-bottom: 20px;
+                margin-left: 10px;
+                margin-top: 75px;
+            }
+
+            .slick-next:before,
+            .slick-prev:before {
+                color: #ffd900;
+                display: flex;
+                transform: scale(1.5);
+            }
+
+            .slick-dots li button:before {
+                color: #000000;
+                opacity: 1;
+                font-size: 8px;
+            }
+
+            .slick-dots li.slick-active button:before {
+                color: #ffd900;
+                font-size: 12px;
+                opacity: 1;
+                outline: #000000;
+            }
+
+            .slick-slide {
+                outline: none;
+                border: none;
+            }
+        </style>
+
+
+
+
+    </div>
+
+    <p id="ID_results"
+        style="font-size: x-large; font-weight: 600; position: absolute; top:15%; left:15.5%; color: lightgray; font-weight: 400;">
+
+    </p>
+
+    <div id="results" style="position: absolute; left: 9.5%; top: 25%;">
+
+    </div>
+</body>
+
+
+</html>

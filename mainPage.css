@@ -1,0 +1,114 @@
+
+.body{
+    background: #222222; overflow-x: hidden;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+
+}
+
+
+.header{
+    display: inline-block;
+    background: #414141;
+    width: 110%;
+    height: 90px;
+    color: white;
+    position: absolute;
+    margin-left: -10px;
+    margin-top: -10px;
+    padding-left: 20px;
+    padding-top: 30px;   
+}
+
+#searchBar{
+    display: inline-block;
+    border-radius: 5px;
+    outline: none;
+    border:none;
+    height: 35px;
+    margin-left: 20px;
+    padding-left: 12px;
+    width: 800px;
+}
+#searchButton{
+    height: 30px;
+    outline:none;
+    border:none;
+    background: url('https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png');
+    width: 35px;
+    margin-left: -45px;
+    margin-top: -10px;  
+}
+
+
+@keyframes fadeIn {
+  from {opacity: 0 }
+  to {opacity: 1;}
+}
+
+.resultListItem{
+    display: block;
+    position: relative;
+    list-style-type: none;
+    color: white;
+    background: #2b2b2b;
+    width: 800px;
+    height: 100px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    line-height: 20px;
+
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    cursor: pointer;
+     
+}
+
+.resultListItem :hover{
+    background-color: #636363;
+    transition: 0.2s; 
+    
+}
+
+.MainImage{
+
+
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    left: 43%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#Container{
+
+    display: inline-block;
+    width: 1150px;
+    margin-top: 100px ;
+    margin-left: 50px;
+    margin-right: auto;
+
+    position: absolute;
+}
+.movie-title{
+    word-wrap: break-word;
+    max-width: 175px;
+    color: whitesmoke;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+
+
+.movieImage{
+    border-radius: 5px; margin-left: 10px; cursor: pointer; margin-top: 15px;
+    transition: 0.3s;
+
+}
+
+.movieImage:hover{
+    box-shadow: 0px 0px 12px whitesmoke;
+    transition: 0.3s;
+
+}

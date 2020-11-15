@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title id="ID_PageTitle">Movie Review</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="MovieDetailsPage.css">
+
+    <script src="jquery.js"></script>
+
+</head>
+
+<body style="background: #3d3d3d">
+
+    <script type="text/javascript" src="Configuration.js"></script>
+    <script type="text/javascript" src="MovieDetails.js"></script>
+
+    <div id="pageTransparency">
+        <!--Main div for the fade In animation for all website contents-->
+        <div class="header">
+            <p style="font-size: x-large; font-weight: 600; display: inline; ">Movie Website</p>
+        </div>
+        <div id="movieTitle">
+            <p style="padding-top: 10px;position: relative;">
+                <!--Empty space-->
+            </p>
+            <p id="ID_Title"
+                style="font-size: 50px; font-weight: 400; padding-top: 20px; margin-left: 20px; position: relative; display: inline;">
+            </p>
+            <p id="ID_Date"
+                style="font-size: 30px; font-weight: 400; position: relative; display: inline; color: gainsboro; margin-left: 15px;">
+            </p>
+            <img id="ID_Poster" src="images/star.png" width="25px"
+                style="position: relative; margin-left: 25px; padding-bottom: 30px; padding-top: 20px; display: inline;">
+            <p id="ID_VoteAverage"
+                style="position: relative; margin-left: 5px;display: inline; padding-bottom: 10px; font-size: x-large;">
+            </p>
+            <p id="ID_VoteCount"
+                style="position: relative; margin-left: 5px;display: inline; padding-bottom: 10px; font-size: small; color: lightgray;">
+            </p>
+            <div
+                style="position: relative; margin-left: 0px; padding-bottom: 15px; font-size: medium; color: gainsboro; margin-top: -15px; display: block;">
+                <p id="ID_Genres"
+                    style="position: relative; margin-left: 30px; padding-bottom: 15px; font-size: medium; color: gainsboro; display: inline;">
+
+                </p>
+                <p id="ID_Rating"
+                    style="position: relative; margin-left: 30px; padding-bottom: 15px; font-size: medium; color: gainsboro; display: inline;">
+
+                </p>
+                <p id="ID_Runtime"
+                    style="position: relative; margin-left: 30px; padding-bottom: 15px; font-size: medium; color: gainsboro; display: inline;">
+
+                </p>
+
+            </div>
+        </div>
+
+        <iframe id="ID_Trailer" width="650" height="365" src="" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+            style="margin-left: 30px; position: relative; border-radius: 10px; margin-bottom: 50px; margin-top: 20px;"></iframe>
+
+        <img id="ID_MainPoster" src="images/empty.png" width="400" height="576"
+            style="position: relative; margin-top: -245px; border-radius: 10px; margin-left: 25px; outline:none; border:none">
+
+        <button id="ID_AllVideosBTN"
+
+            onclick="seeAllVideos()">All
+            videos</button>
+
+        <button id="ID_CastButton" onclick="goToCast()">View Cast</button>
+        <button id="ID_ReviewButton" onclick="viewReviews()">View Reviews</button>
+
+
+        <p id="ID_Overview"
+            style="position: relative; border-radius: 10px; margin-left: 32px; display: block; color: lightgray; margin-top: -120px; width: 600px;">
+            Hi</p>
+
+        <h5
+            style="position: relative; border-radius: 10px; margin-left: 32px; display: block; color: gray; margin-top: 30px; width: 600px; margin-bottom: -10px; font-size: 18px;">
+            Tagline:</h5>
+
+        <p id="ID_Tagline"
+            style="position: relative; border-radius: 10px; margin-left: 32px; display: block; color: lightgray; margin-top: 20px; width: 50%; font-size: 14px; width: 700px; display: inline-block;">
+            Hi</p>
+
+        <div class="behindScenesInfo">
+
+            <p style="font-size: 13px; display: inline-block; color: gray;">Production Countries:</p>
+
+            <p id="ID_ProductionCountries"
+                style="font-size: 11px; display: inline-table; width: 200px; position: relative;">
+            </p>
+            <br style="line-height: 10%;">
+
+            <p style="font-size: 13px; display: inline-block; color:gray">Production Companies:</p>
+
+            <p id="ID_ProductionCompanies" style="font-size: 11px; width: 200px; display: inline-table;">
+
+            </p>
+
+            <br>
+            <p style="font-size: 13px; display: inline-block; color:gray">Budget:</p>
+            <p id="ID_Budget" style="font-size: 11px; width: 200px; display: inline-table;">
+
+            </p>
+
+            <br>
+
+            <p style="font-size: 13px; display: inline-block; color:gray">Revenue:</p>
+            <p id="ID_Revenue" style="font-size: 11px; width: 200px; display: inline-table;">
+            </p>
+
+        </div>
+
+        <h3
+            style="position: relative; border-radius: 10px; margin-left: 32px; display: block; color: gray; margin-top: 30px; width: 500px; margin-bottom: -10px;">
+            Plot:</h3>
+
+        <p
+            id="ID_Plot"
+            style="position: relative; border-radius: 10px; margin-left: 32px; display: block; color: lightgray; margin-top: 30px; width: 650px; margin-bottom: -10px; font-size: 14px;">
+
+        </p>
+
+        <h3
+            id="CastTitle"
+            style="position: relative; border-radius: 10px; margin-left: 32px; display: block; color: gray; margin-top: 80px; width: 500px; margin-bottom: -10px;">
+            Cast:
+        </h3>
+
+        <div id="CastList">
+
+        </div>
+
+        <button id="ID_CastButton" style="margin-left: 35px;" onclick="viewCrew()">View Crew ➔</button>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
