@@ -73,8 +73,8 @@ async function fetchMovieDetails() {
 
     //other details
     try {
-        let moreDetailsURL = "http://www.omdbapi.com/?i=" + movieDetailsObject.IMDB_ID + "&plot=full&apikey=29e86f57";
-        let moreDetailsURL2 = "http://www.omdbapi.com/?i=" + movieDetailsObject.IMDB_ID + "&plot=full&apikey=1bb7d720";
+        let moreDetailsURL = "https://www.omdbapi.com/?i=" + movieDetailsObject.IMDB_ID + "&plot=full&apikey=29e86f57";
+        let moreDetailsURL2 = "https://www.omdbapi.com/?i=" + movieDetailsObject.IMDB_ID + "&plot=full&apikey=1bb7d720";
 
         let response = await fetch(moreDetailsURL);
         if (response == null || response == undefined) {
