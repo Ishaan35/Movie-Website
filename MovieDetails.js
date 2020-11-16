@@ -423,7 +423,7 @@ function setSimilarMovieInfo(index) {
 function viewReviews() {
     localStorage.setItem("MovieID", MovieID);
     localStorage.setItem("baseURL", ThebaseURL);
-    window.open('viewReviews.html');
+    window.open('ViewReviews.html');
 }
 
 
